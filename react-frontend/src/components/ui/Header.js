@@ -6,7 +6,7 @@ export default function Header(props) {
         <header>
             <h1 className="title">{props.title}</h1>
             {props.model === "todo" ? (
-                <span style={{color: "blue", fontStyle: "italic"}}>{props.isBusy() ? "Status: Loading..." : "Status: Ready"}</span>
+                <span style={{color: "blue", fontStyle: "italic", position: "absolute", top: "10px" }}>{props.isBusy() ? "Status: Loading..." : "Status: Ready"}</span>
             ):(
                 <span></span>
             )

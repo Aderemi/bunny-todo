@@ -14,7 +14,7 @@ export default function Footer(props) {
                 {model === "todo" ? `${count} items left` :  `${count} ${model}s`}
             </div>
             <div className="pull-right">
-                <Filter {...{model, filter, changeFilter}}/>
+                {/*<Filter {...{model, filter, changeFilter}}/>*/}
             </div>
         </footer>
     );
