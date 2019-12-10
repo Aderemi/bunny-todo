@@ -37,5 +37,5 @@ export function stringIncludes(str, substr) {
 }
 
 export const globalVariable = {
-    "api": "http://localhost:8080/"
+    "api": "http://34.83.73.146:8080/"
 };

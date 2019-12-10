@@ -2,7 +2,7 @@
 
 This is a Todo app written in React, Node and docker micro-service project.
 
-Check the demo hosted on a GCP Virtual Machine http://30.93.3.2/.
+Check the demo hosted on a GCP Virtual Machine http://34.83.73.146/.
 
 
 ## Instructions
@@ -36,11 +36,11 @@ In this set up the each microservice is encapsulated in a docker containers.
 Frontend, Backend and postgres database are running individually as a service 
 on their different containers. 
 
-The Frontend service is running at port 80 of http://30.93.3.2
+The Frontend service is running at port 80 of http://34.83.73.146
 
-The Backend service is running at port 8080 of http://30.93.3.2
+The Backend service is running at port 8080 of http://34.83.73.146
 
-While the PosgreSQL service is running on 5432 of http://30.93.3.2 but the service is not
+While the PosgreSQL service is running on 5432 of http://34.83.73.146 but the service is not
 exposed to the external world, is only accessible within the network.
 
 ##Improvements that should be done
