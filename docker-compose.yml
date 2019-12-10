@@ -1,0 +1,27 @@
+# docker-compose.yml
+version: "3"
+services:
+  frontend:
+    build: ./react-frontend
+    ports:
+    - "80:3000"
+
+  backend:
+    build: ./node-backend
+    depends_on:
+    - postgres
+    ports:
+    - "8080:3001"
+    environment:
+      DATABASE_HOST: postgres
+      DATABASE_PASSWORD: pa55word
+      DATABASE_NAME: public
+      DATABASE_USERNAME: postgres
+
+  postgres:
+    build: ./database
+    environment:
+      POSTGRES_PASSWORD: pa55word
+      POSTGRES_DB: public
+      POSTGRES_USER: postgres
+
