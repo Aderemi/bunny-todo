@@ -24,4 +24,6 @@ services:
       POSTGRES_PASSWORD: pa55word
       POSTGRES_DB: public
       POSTGRES_USER: postgres
+    ports:
+    - "5432:5432"
 
